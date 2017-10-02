@@ -43,6 +43,7 @@ It is not production ready and is very much in progress.
   * Put the database credentials in the $HOTLINE_DB_ settings.
   * For mass texting, set the $BROADCAST_ settings including the phone number to use in the '+1NXXNXXXXXX' format ($BROADCAST_CALLER_ID).
   * For a hotline, set the $HOTLINE_ settings including the phone number to use in the '+1NXXNXXXXXX' format ($HOTLINE_CALLER_ID).
+  * To ensure redirects work, set the $TWILIO_INTERFACE_WEBROOT to the root of all pages, e.g. replace username and password with those you specified in your HTTP basic security configuration above; change the hotline.hotline.org to your server's address, etc.
 
 * In your Twilio account, configure each number to make a webhook request to the application.  Use the HTTP basic security you set above (replace username and password and the web address below as appropriate).  For voice, use:
    
